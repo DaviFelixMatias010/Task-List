@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #9356f1;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+#title{
+    position: absolute;
+    top: 50px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Bruno Ace SC', cursive;
+    text-shadow: 1px 5px 5px black;
+}
+.task_field{
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px #924ece;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+
+}
+.task_field #input_task{
+    border:none ;
+    outline: 0;
+}
+input{
+    position: relative;
+    left: 2px;
+    width: 200px;
+    color: #151515;
+    font-family: 'Bruno Ace SC', cursive;
+}
+input::placeholder{
+    font-size: 10px;
+    font-weight: normal;
+    opacity: 0.5;
+
+}
+#add{
+    position: relative;
+    right: 5px;
+    background-color: #7f52eb;
+    color: #ffffff;
+    border: 0;
+    padding: 3px;
+    border-radius: 5px;
+    padding: 8px;
+    font-size:8px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+#add:hover{
+    transform: scale(1.2);
+}
+.tasks{
+    background-color: #ffffff;
+    margin-top: 25px;
+    width: 300px;
+    border-radius: 5px;
+    height: 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 3px 5px #924ece;
+}
+.trash{
+    width: 15px;
+    position: relative;
+    right: 12px;
+    background-color: #7f52eb;
+    padding: 3px ;
+    border-radius: 2px;
+}
+p{
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 8px;
+    position: relative;
+    left: 10px;
+}
