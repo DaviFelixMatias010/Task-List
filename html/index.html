@@ -8,19 +8,23 @@
     <title>To do List</title>
 </head>
 <body>
-    <div class="container">
-        <h1 id="title">TO DO LIST</h1>
+    <div class="container" id="container">
+        <h1 id="title">TASK LIST</h1>
         <div class="task_field">
             <form action="">
                 <input type="text" id="input_task" placeholder="task to be done">
-                <button type="button" id="add" onclick="add_task()">Add +</button>
+                <button type="button" id="add">Add +</button>
             </form>
         </div>
-        <!-- <div class="tasks">
+        <!--<div class="tasks">
             <p></p>
-            <img class="trash" src="../img/trash.png" alt="delete" id="trash">
-        </div>-->
-       
+            <img class="trash" src="../img/trash.png" alt="delete">
+        </div>
+        -->
+        <dialog id="modal">
+            <h2 id="title_modal">Enter the task!</h2>
+            <button type="button" id="close"> Close</button>
+        </dialog>
     </div>
     <script src="../js/script.js"></script>
 </body>

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Bruno Ace SC', cursive;
 }
 body{
     background-color: #9356f1;
@@ -43,7 +44,6 @@ input{
     left: 2px;
     width: 200px;
     color: #151515;
-    font-family: 'Bruno Ace SC', cursive;
 }
 input::placeholder{
     font-size: 10px;
@@ -66,6 +66,7 @@ input::placeholder{
 }
 #add:hover{
     transform: scale(1.2);
+    background-color: rgb(39, 177, 39);
 }
 .tasks{
     background-color: #ffffff;
@@ -85,10 +86,62 @@ input::placeholder{
     background-color: #7f52eb;
     padding: 3px ;
     border-radius: 2px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.trash:hover{
+    transform: scale(1.2);
+    background-color: #e70000;
 }
 p{
     font-family: 'Bruno Ace SC', cursive;
     font-size: 8px;
     position: relative;
     left: 10px;
+}
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+#modal{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 10;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 1px 2px 5px;
+}
+#title_modal{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+#close{
+    position: relative;
+    right: 5px;
+    background-color: #7f52eb;
+    color: #ffffff;
+    border: 0;
+    padding: 8px;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+}
+#close:hover{
+    transform: scale(1.1);
+    background-color: rgb(94, 92, 92);
+}
+#fade.hide,
+#modal.hide{
+    opacity: 0;
 }
